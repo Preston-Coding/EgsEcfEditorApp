@@ -1,6 +1,8 @@
 # EgsEcfEditorApp
 An application to simplify the handling and customizing of the .ecf configuration files of [Empyrion Galactic Survival](https://empyriongame.com/)
 
+<img src="images/tool_teaser.png" title="Tool Teaser" width="1000" height="500"/>
+
 ## Content
 - [Motivation](#motivation)
 - [Limitation](#limitation)
@@ -29,7 +31,7 @@ An application to simplify the handling and customizing of the .ecf configuratio
 
 
 
-# For Pasting while buolding readme page
+# For Pasting while building readme page
 
 ## Motivation
 Searching the web for a tool to create report descriptors for HID and PID usage leads me to the standard [Descriptor Tool](https://www.usb.org/document-library/hid-descriptor-tool) of the USB Foundation. After strugling around with bugs and missing features like "crashes to work-loss", "undefined gui elements", "uncomprehensible behaviour" and "cruel import/export" I searched the web for a modern tool with no success. Realizing that nobody seems to provide a viable tool to develope and debug report descriptors for HID or PID usage I decided to create my own tool. Here it is!
