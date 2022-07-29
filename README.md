@@ -5,15 +5,33 @@ An application to simplify the handling and customizing of the .ecf configuratio
 
 ## Content
 - [Motivation](#motivation)
-- [Limitation](#limitation)
-- [Installation](#requirements)
-- [Import and Export](#import-and-export)
-- [Data Handling and Recognition](#data-handling-and-recognition)
-- [Shortcuts](#shortcuts)
+- [Installation](#installation)
+- [Feature Overview](#feature-overview)
+- [Operations Overview](#operations-overview)
+- [Shortcuts and Icons](#shortcuts-and-icons)
+- [File Content Definition](#file-content-definition)
+- [File Content Recognition](#file-content-recognition)
 - [Planned Major Features](#planned-major-features)
 
+## Motivation
 
 
+## Installation
+
+
+## Feature Overview
+
+
+## Operations Overview
+
+
+## Shortcuts and Icons
+
+
+## File Content Definition
+
+
+## File Content Recognition
 
 
 ## Planned Major Features
@@ -30,7 +48,7 @@ An application to simplify the handling and customizing of the .ecf configuratio
 
 
 
-
+--------------------------------------------------------------
 # For Pasting while building readme page
 
 ## Motivation
