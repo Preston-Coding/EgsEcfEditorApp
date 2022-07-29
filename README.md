@@ -1,5 +1,5 @@
 # Empyrion Configuration Editor
-An application to simplify the handling and customizing of the .ecf configuration files of [Empyrion Galactic Survival](https://empyriongame.com/)
+An application to simplify the handling and customizing of the `.ecf` configuration files of [Empyrion Galactic Survival](https://empyriongame.com/)
 
 <img src="images/tool_teaser.png" title="Tool Teaser" width="1000" height="500"/>
 
@@ -22,7 +22,7 @@ Now all the whole bunch of tons of settings must be maintained at once even if a
 
 <img src="https://media.giphy.com/media/xT5LMAvRY92qUXj7dC/giphy.gif" width="300" height="250">
 
-To all who know what i'm talking about here comes the solution!
+You know what i'm talking about? Here comes the solution!
 
 <img src="https://media.giphy.com/media/5Y2bU7FqLOuzK/giphy.gif" width="300" height="250">
 
@@ -44,16 +44,31 @@ At saving a `.ecf` file the whole content in the file is wiped and recreated.
 ```diff
 - Any element with errors is NOT written to the file!
 ```
-The error state is inherited structure upwards. A error of a subelement invalidates its container upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding element in the final `.ecf` file. 
+The error state is inherited structure upwards. A error of a subelement invalidates its container upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding elements in the final `.ecf` file. 
 
 ### Language and Tool Support
 Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported.
 
 ### Tool Areas
 
-<img src="images/tree_area.png" title="Tool Teaser" width="1000" height="500"/>
+<img src="images/file_operation_area.png" title="File Operation Area" width="1000" height="500"/>
+<figcaption align = "center"><b>test</b></figcaption>
 
-<img src="images/info_area.png" title="Tool Teaser" width="1000" height="500"/>
+testeetete
+
+<img src="images/filter_area.png" title="Filter Area" width="1000" height="500"/>
+
+<img src="images/content_operation_area.png" title="Content Operation Area" width="1000" height="500"/>
+
+<img src="images/tree_area.png" title="Tree View Area" width="1000" height="500"/>
+
+<img src="images/parameter_area.png" title="Parameter View Area" width="1000" height="500"/>
+
+<img src="images/info_area.png" title="Info View Area" width="1000" height="500"/>
+
+<img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
+
+
 
 ## Operations Overview
 
