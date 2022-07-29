@@ -30,11 +30,13 @@ To all who know what i'm talking about here comes the solution!
 Just download the latest release and unzip the content wherever you might need to. Run the portable executeable file and have fun!
 
 ## Feature Overview
-### Definition
-For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `` sub folder of the zip package. For creating or adjusting the definitions yourself refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different definition the `.ecf` file must be closed and reopened. The actual version is shipped with definitions for:
+### Content Definition
+For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `EcfFileDefinitions` sub folder of the zip package. For creating or adjusting the definitions yourself refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different definition the `.ecf` file must be closed and reopened. The actual version is shipped with definitions for:
 - `BlocksConfig.ecf`
 - `Factions.ecf`
 - `ItemsConfig.ecf`
+
+### Content Recognition
 
 ## Operations Overview
 
@@ -48,7 +50,7 @@ For each `.ecf` file the tool needs a definition. These definitions are located 
 
 ## File Content Definition
 notes
-- filename
+- filename, foldername, template
 
 ## File Content Recognition
 
