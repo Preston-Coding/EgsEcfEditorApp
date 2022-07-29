@@ -37,6 +37,12 @@ For each `.ecf` file the tool needs a definition. These definitions are located 
 - `ItemsConfig.ecf`
 
 ### Content Recognition
+At file loading the tool parses the file content according to the attached definition. The tool is balanced to the variety of the subtleties of the spelling in the `.ecf` files. Due to the design goal `the output should match input in at much details as possible` the tool in its release state will likely also report failures in the default `.ecf` files of the game. This is not a tool bug, but developer inaccuracies that may or may not be compensated for by a fallback. n order to achieve reliable behavior, I have chosen to report such bugs rather than legitimizing these inaccuracies by the definition.  For details see [File Content Recognition](#file-content-recognition).
+
+### Content Creation
+At saving a `.ecf` file the whole content in the file is wiped and recreated. 
+Any element (the red ones) with errors is not written to the file. 
+So pay attention to the error list report and take care of reported errors if you need the corresponding element in the final `.ecf` file.
 
 ## Operations Overview
 
