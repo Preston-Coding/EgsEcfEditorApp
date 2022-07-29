@@ -111,18 +111,70 @@ The only exception is the creation of a completely new root element. At the crea
 - `strg + v` pastes the copied items into the selected item, or after it if insertion is not allowed for the item
 
 ### Context Panel
+#### Tree View Context Panel
+The context panel of the tree view provides access to the content operations suitable for tree items.
 
+<img src="images/tree_context.png" title="Tree Context Panel"/>
 
+#### Parameter View Context Panel
+The context panel of the parameter view provides access to the content operations suitable for parameter items.
+
+<img src="images/parameter_context.png" title="Parameter Context Panel"/>
+
+#### Error View Context Panel
+The context panel of the error view has support functions for error tracking.
+
+<img src="images/error_context.png" title="Error Context Panel"/>
 
 ### Sorting
 The three listing views [Tree View Area](#tree-view-area), [Parameter View Area](#parameter-view-area) and [Error View Area](#error-view-area) have a sorting panel each. The sort panel provides settings for concurrent items and various sorting options.
 
 <img src="images/sorting_panel.png" title="Sorting Panel"/>
 
+### Icons
+#### File Operations
+- <img src="EgsEcfControls\Resources\Icon_NewFile.png" title="icon" width="16" height="16"/> create new file
+- <img src="EgsEcfControls\Resources\Icon_OpenFile.png" title="icon" width="16" height="16"/> open existing file
+- <img src="EgsEcfControls\Resources\Icon_ReloadFile.png" title="icon" width="16" height="16"/> reload content from selected file
+- <img src="EgsEcfControls\Resources\Icon_SaveFile.png" title="icon" width="16" height="16"/> save selected file
+- <img src="EgsEcfControls\Resources\Icon_SaveAsFile.png" title="icon" width="16" height="16"/> save selected file with new name
+- <img src="EgsEcfControls\Resources\Icon_SaveAsFilteredFile.png" title="icon" width="16" height="16"/> save filter result to file
+- <img src="EgsEcfControls\Resources\Icon_SaveAllFiles.png" title="icon" width="16" height="16"/> save all opened files
+- <img src="EgsEcfControls\Resources\Icon_CloseFile.png" title="icon" width="16" height="16"/> close selected file
+- <img src="EgsEcfControls\Resources\Icon_CloseAllFiles.png" title="icon" width="16" height="16"/> close all open files
+- <img src="EgsEcfControls\Resources\Icon_Compare.png" title="icon" width="16" height="16"/> compares two files and displays differences
+- <img src="EgsEcfControls\Resources\Icon_Merge.png" title="icon" width="16" height="16"/> merge two files to one with logics
+- <img src="EgsEcfControls\Resources\Icon_BuildTechTreePreview.png" title="icon" width="16" height="16"/> display the tech tree preview
+- <img src="EgsEcfControls\Resources\Icon_ReloadDefinitions.png" title="icon" width="16" height="16"/> see [File Content Definition](#file-content-definition)
+- <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> see [File Content Definition](#file-content-definition)
 
+#### Filter and Sorting Operations
+- <img src="EgsEcfControls\Resources\Icon_ApplyFilter.png" title="icon" width="16" height="16"/> apply filter
+- <img src="EgsEcfControls\Resources\Icon_ClearFilter.png" title="icon" width="16" height="16"/> clear filter
+- <img src="EgsEcfControls\Resources\Icon_ShowAllItems.png" title="icon" width="16" height="16"/> show item with / without error
+- <img src="EgsEcfControls\Resources\Icon_ChangeSortDirection.png" title="icon" width="16" height="16"/> switch the sort direction
+- <img src="EgsEcfControls\Resources\Icon_NumericSorting.png" title="icon" width="16" height="16"/> sets sorting to the origin (file) order
+- <img src="EgsEcfControls\Resources\Icon_AlphabeticSorting.png" title="icon" width="16" height="16"/> sets sorting to alphabetic order
 
+#### Content Operations
+- <img src="EgsEcfControls\Resources\Icon_Add.png" title="icon" width="16" height="16"/> add item to / after selection
+- <img src="EgsEcfControls\Resources\Icon_ChangeSimple.png" title="icon" width="16" height="16"/> editing first selected item
+- <img src="EgsEcfControls\Resources\Icon_ChangeComplex.png" title="icon" width="16" height="16"/> editing item with logics
+- <img src="EgsEcfControls\Resources\Icon_Remove.png" title="icon" width="16" height="16"/> removing selected items
+- <img src="EgsEcfControls\Resources\Icon_Copy.png" title="icon" width="16" height="16"/> copy selected items
+- <img src="EgsEcfControls\Resources\Icon_Paste.png" title="icon" width="16" height="16"/> paste copied items to / after selection
+- <img src="EgsEcfControls\Resources\Icon_Undo.png" title="icon" width="16" height="16"/> undo last change
+- <img src="EgsEcfControls\Resources\Icon_Redo.png" title="icon" width="16" height="16"/> redo last undo
+- <img src="EgsEcfControls\Resources\Icon_MoveUp.png" title="icon" width="16" height="16"/> move selected items up
+- <img src="EgsEcfControls\Resources\Icon_MoveDown.png" title="icon" width="16" height="16"/> move selected items down
+- <img src="EgsEcfControls\Resources\Icon_AddValue.png" title="icon" width="16" height="16"/> add value slot after selection
+- <img src="EgsEcfControls\Resources\Icon_AddValueGroup.png" title="icon" width="16" height="16"/> add value group after selection
+- <img src="EgsEcfControls\Resources\Icon_RemoveValue.png" title="icon" width="16" height="16"/> remove selected value slot
+- <img src="EgsEcfControls\Resources\Icon_RemoveValueGroup.png" title="icon" width="16" height="16"/> remove selected value group
 
-
+#### Error Operations
+- <img src="EgsEcfControls\Resources\Icon_ShowInEditor.png" title="icon" width="16" height="16"/> show error in tool
+- <img src="EgsEcfControls\Resources\Icon_ShowInFile.png" title="icon" width="16" height="16"/> show error in file
 
 ## File Content Definition
 notes
@@ -133,7 +185,7 @@ notes
 - fatal errors, editing errors, parsing errors
 
 ## Planned Major Features
-The next steps will be the compare / merge feature together with more supported files. :wrench:
+:wrench::wrench::wrench: The next steps will be the compare / merge feature together with more supported files. :wrench::wrench::wrench:
 
 - Support for all .ecf files
 - Compare files view
