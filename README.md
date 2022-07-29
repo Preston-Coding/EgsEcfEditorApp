@@ -52,34 +52,52 @@ Icons and Controls with complex behavior have tooltips on mouse over. All Labels
 ### Tool Areas
 #### File Operation Area
 The standard file operations (new, open, reload, save, close) are located in this area. The cross-file functions (diff, merge, xml) are also arranged here.
+
 <img src="images/file_operation_area.png" title="File Operation Area" width="1000" height="500"/>
 
 #### Filter and File Selection Area
 In this Area each opened file will get a tab containing the file name. The first label in the tool line indicates the attached content definition, for example `BlocksConfig`. The remaining icons provide different filter options applied to all content view areas.
+
 <img src="images/filter_area.png" title="Filter Area" width="1000" height="500"/>
 
 #### Content Operation Area
-The tools in this area provide content altering options like adding, editing or removing elements. The copy/paste function is located here, too.  
+The tools in this area provide content altering options like adding, editing or removing elements. The copy/paste function is located here, too.
+
 <img src="images/content_operation_area.png" title="Content Operation Area" width="1000" height="500"/>
 
 #### Tree View Area
 The tree view area brings the structural overview. The root elements, child elements, parameters and comments are displayed in this view. If an element has an error the entry in this view will turn red.
+
 <img src="images/tree_area.png" title="Tree View Area" width="1000" height="500"/>
 
 #### Parameter View Area
 The parameter view area shows the detail information of any parameter correlating to the selected tree element. Additionally the view analyzes and displays the inheritance dependancies to referenced elements to provide a overview over all parameters effecting the selected element. If an parameter has an error the entry in this view will turn red.
+
 <img src="images/parameter_area.png" title="Parameter View Area" width="1000" height="500"/>
 
 #### Info View Area
 The info area displays additional detail information for the selected tree element and the selected parameter. Especially the element attributes (e.g `formatter`) can be found here.
+
 <img src="images/info_area.png" title="Info View Area" width="1000" height="500"/>
 
 #### Error View Area
 In the error view all occured errors are listed. The errors belong to category `fatal`, `parsing` or `editing`. While `parsing` and `editing` are mostly correctable with the tool. The `fatal` ones violate the basic `.ecf` syntax and therefore cannot be imported.
+
 <img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
 
 ## Operations Overview
-### Opening files
+### Opening a file
+After selecting the file to open the tool tries to guess which definition fits to the file by examining the file name. If this is successful the guessed definition is automaticly selected in the following dialog. In this case the Dialog can be skipped with `Ok`. When the guessing fails or a new file is created the definition must be selected manually from the provided drop down list.
+
+<img src="images/preload_settings.png" title="File Property Selector"/>
+
+For especially big files like `BlocksConfig.ecf` (or especially lame PCs :zany_face:) a loading Dialog is shown while parsing the file content. 
+
+<img src="images/loading_content.png" title="Loading Dialog"/>
+
+
+
+
 
 
 ## Shortcuts and Functions
