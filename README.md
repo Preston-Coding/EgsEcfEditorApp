@@ -103,15 +103,26 @@ The only exception is the creation of a completely new root element. At the crea
 <img src="images/editing_dialog.png" title="Editing Dialog"/>
 
 ## Shortcuts and Functions
-### Sorting
-
-
 ### Shortcuts
 - `double-click` opens the edit panel for the clicked item
 - `right-click` opens the context panel for the clicked item
 - `delete` removes the selected items
 - `strg + c` copies the selected items to the clipboard
 - `strg + v` pastes the copied items into the selected item, or after it if insertion is not allowed for the item
+
+### Context Panel
+
+
+
+### Sorting
+The three listing views [Tree View Area](#tree-view-area), [Parameter View Area](#parameter-view-area) and [Error View Area](#error-view-area) have a sorting panel each. The sort panel provides settings for concurrent items and various sorting options.
+
+<img src="images/sorting_panel.png" title="Sorting Panel"/>
+
+
+
+
+
 
 ## File Content Definition
 notes
