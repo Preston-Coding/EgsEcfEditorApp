@@ -27,7 +27,7 @@ To all who know what i'm talking about here comes the solution!
 <img src="https://media.giphy.com/media/5Y2bU7FqLOuzK/giphy.gif" width="300" height="250">
 
 ## Installation
-Just download the latest release and unzip the content wherever you might need to. Run the portable executeable file and have fun!
+Just download the latest release and unzip the content wherever you might need to. Run the executeable file and have fun!
 
 ## Feature Overview
 ### Content Definition
@@ -37,12 +37,17 @@ For each `.ecf` file the tool needs a definition. These definitions are located 
 - `ItemsConfig.ecf`
 
 ### Content Recognition
-At file loading the tool parses the file content according to the attached definition. The tool is balanced to the variety of the subtleties of the spelling in the `.ecf` files. Due to the design goal `the output should match input in at much details as possible` the tool in its release state will likely also report failures in the default `.ecf` files of the game. This is not a tool bug, but developer inaccuracies that may or may not be compensated for by a fallback. n order to achieve reliable behavior, I have chosen to report such bugs rather than legitimizing these inaccuracies by the definition.  For details see [File Content Recognition](#file-content-recognition).
+At file loading the tool parses the file content according to the attached definition. The tool is balanced to the variety of the subtleties of the spelling in the `.ecf` files. Due to the design goal `the output should match input in at much details as possible` the tool in its release state will likely also report failures in the default `.ecf` files of the game. This is not a tool bug, but developer inaccuracies that may or may not be compensated for by a fallback. In order to achieve reliable behavior, I have chosen to report such bugs rather than legitimizing these inaccuracies by the definition. For details see [File Content Recognition](#file-content-recognition).
 
 ### Content Creation
-At saving a `.ecf` file the whole content in the file is wiped and recreated. 
-Any element (the red ones) with errors is not written to the file. 
-So pay attention to the error list report and take care of reported errors if you need the corresponding element in the final `.ecf` file.
+At saving a `.ecf` file the whole content in the file is wiped and recreated.
+```diff
+- Any element with errors is NOT written to the file!
+```
+The error state is inherited structure upwards. A error of a subelement invalidates its container upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding element in the final `.ecf` file. 
+
+### Tool Areas
+
 
 ## Operations Overview
 
