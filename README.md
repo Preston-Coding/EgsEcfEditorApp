@@ -27,8 +27,7 @@ To all who know what i'm talking about here comes the solution!
 <img src="https://media.giphy.com/media/5Y2bU7FqLOuzK/giphy.gif" width="300" height="250">
 
 ## Installation
-Just download the latest release and unzip it wherever you might need to.
-Run the portable executeable and have fun!
+Just download the latest release and unzip the content wherever you might need to. Run the portable executeable file and have fun!
 
 ## Feature Overview
 
