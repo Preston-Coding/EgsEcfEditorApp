@@ -81,7 +81,7 @@ The info area displays additional detail information for the selected tree eleme
 <img src="images/info_area.png" title="Info View Area" width="1000" height="500"/>
 
 #### Error View Area
-In the error view all occured errors are listed. The errors belong to category `fatal`, `parsing` or `editing`. While `parsing` and `editing` are mostly correctable with the tool. The `fatal` ones violate the basic `.ecf` syntax and therefore cannot be imported.
+In the error view all occured errors are listed. The errors belong to category `fatal`, `parsing` or `editing`. While `parsing` and `editing` are mostly correctable with the tool. The `fatal` ones violate the basic `.ecf` syntax and therefore cannot be imported. Due to the non-saving of elements with errors the list is cleared at file saving.
 
 <img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
 
@@ -91,16 +91,22 @@ After selecting the file to open the tool tries to guess which definition fits t
 
 <img src="images/preload_settings.png" title="File Property Selector"/>
 
-For especially big files like `BlocksConfig.ecf` (or especially lame PCs :zany_face:) a loading Dialog is shown while parsing the file content. 
+For especially big files like `BlocksConfig.ecf` (or especially lame PCs :zany_face:) a loading dialog is shown while parsing the file content. 
 
 <img src="images/loading_content.png" title="Loading Dialog"/>
 
+### Adding / Editing Content
+At adding or editing (see [Shortcuts and Functions](#shortcuts-and-functions)) the editor dialog is shown. The dialog is designed to not produce elements with errors. To achive this support pre opening checks, pre filled selection lists and pre closing checks will be performed. These logics depends primary on the attached file definition and the present content data.
 
+The only exception is the creation of a completely new root element. At the creation of a root element all mandatory (see [File Content Definition](#file-content-definition)) parameters will be added without values. This will create errors until the mandatory parameters will be filled with values.
 
-
-
+<img src="images/editing_dialog.png" title="Editing Dialog"/>
 
 ## Shortcuts and Functions
+### Sorting
+
+
+### Shortcuts
 - `double-click` opens the edit panel for the clicked item
 - `right-click` opens the context panel for the clicked item
 - `delete` removes the selected items
@@ -116,6 +122,8 @@ notes
 - fatal errors, editing errors, parsing errors
 
 ## Planned Major Features
+The next steps will be the compare / merge feature together with more supported files. :wrench:
+
 - Support for all .ecf files
 - Compare files view
 - Merge files with behaviour selection
@@ -124,5 +132,3 @@ notes
 - Element, Parameter, Attribute, Comment mass changing (base on filter/types)
 - SaveAs with taking applied filter into account
 - Undo / Redo
-
-The next steps will be the compare / merge feature together with more supported files.
