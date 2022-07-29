@@ -14,7 +14,17 @@ An application to simplify the handling and customizing of the .ecf configuratio
 - [Planned Major Features](#planned-major-features)
 
 ## Motivation
-https://media.giphy.com/media/h36vh423PiV9K/giphy.gif
+Over a long time lightweight modding [Empyrion Galactic Survival](https://empyriongame.com/) was really simple by adjusting the `config_example.ecf`. Due to the mechanic that the changes were added to the default settings, just the additional adjustments must be maintained. The decision of Eleon to remove these `add adjustments` feature simply felt like:
+
+<img src="https://media.giphy.com/media/h36vh423PiV9K/giphy.gif" width="300" height="300">
+
+Now all the whole bunch of tons of settings must be maintained at once even if adjusting just one tiny value. The awkward `.ecf` format makes this feel like:
+
+<img src="https://media.giphy.com/media/xT5LMAvRY92qUXj7dC/giphy.gif" width="300" height="250">
+
+To all who know what i'm talking about here comes the solution!
+
+<img src="https://media.giphy.com/media/5Y2bU7FqLOuzK/giphy.gif" width="300" height="250">
 
 ## Installation
 
