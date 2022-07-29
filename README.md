@@ -18,7 +18,7 @@ Over a long time lightweight modding [Empyrion Galactic Survival](https://empyri
 
 <img src="https://media.giphy.com/media/h36vh423PiV9K/giphy.gif" width="300" height="300">
 
-Now all the whole bunch of tons of settings must be maintained at once even if adjusting just one tiny value. The awkward `.ecf` format makes this feel like:
+Now all the whole bunch of tons of settings must be maintained at once even if adjusting just one tiny value of one silly block. The awkward `.ecf` format makes this feel like:
 
 <img src="https://media.giphy.com/media/xT5LMAvRY92qUXj7dC/giphy.gif" width="300" height="250">
 
