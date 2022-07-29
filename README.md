@@ -14,7 +14,7 @@ An application to simplify the handling and customizing of the .ecf configuratio
 - [Planned Major Features](#planned-major-features)
 
 ## Motivation
-
+https://media.giphy.com/media/h36vh423PiV9K/giphy.gif
 
 ## Installation
 
@@ -48,4 +48,4 @@ An application to simplify the handling and customizing of the .ecf configuratio
 - SaveAs with taking applied filter into account
 - Undo / Redo
 
-The next steps will be the compare / merge feature togehter with more supported files.
+The next steps will be the compare / merge feature together with more supported files.
