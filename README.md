@@ -1,4 +1,4 @@
-# EgsEcfEditorApp
+# Empyrion Configuration Editor
 An application to simplify the handling and customizing of the .ecf configuration files of [Empyrion Galactic Survival](https://empyriongame.com/)
 
 <img src="images/tool_teaser.png" title="Tool Teaser" width="1000" height="500"/>
@@ -37,7 +37,7 @@ For each `.ecf` file the tool needs a definition. These definitions are located 
 - `ItemsConfig.ecf`
 
 ### Content Recognition
-At file loading the tool parses the file content according to the attached definition. The tool is balanced to the variety of the subtleties of the spelling in the `.ecf` files. Due to the design goal `the output should match input in at much details as possible` the tool in its release state will likely also report failures in the default `.ecf` files of the game. This is not a tool bug, but developer inaccuracies that may or may not be compensated for by a fallback. In order to achieve reliable behavior, I have chosen to report such bugs rather than legitimizing these inaccuracies by the definition. For details see [File Content Recognition](#file-content-recognition).
+At file loading the tool parses the file content according to the attached definition. The tool is balanced to the variety of the subtleties of the spellings in the `.ecf` files. Due to the design goal `the output should match input in at much details as possible` the tool in its release state will likely also report failures in the default `.ecf` files of the game. This is not a tool bug, but developer inaccuracies that may or may not be compensated for by a fallback. In order to achieve reliable behavior, I have chosen to report such bugs rather than legitimizing these inaccuracies by the definition. For details see [File Content Recognition](#file-content-recognition).
 
 ### Content Creation
 At saving a `.ecf` file the whole content in the file is wiped and recreated.
@@ -45,6 +45,9 @@ At saving a `.ecf` file the whole content in the file is wiped and recreated.
 - Any element with errors is NOT written to the file!
 ```
 The error state is inherited structure upwards. A error of a subelement invalidates its container upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding element in the final `.ecf` file. 
+
+### Language and Tool Support
+Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported.
 
 ### Tool Areas
 
@@ -64,7 +67,8 @@ notes
 - filename, foldername, template
 
 ## File Content Recognition
-
+notes
+- fatal errors, editing errors, parsing errors
 
 ## Planned Major Features
 - Support for all .ecf files
