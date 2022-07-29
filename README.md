@@ -70,11 +70,13 @@ The tree view area brings the structural overview. The root elements, child elem
 The parameter view area shows the detail information of any parameter correlating to the selected tree element. Additionally the view analyzes and displays the inheritance dependancies to referenced elements to provide a overview over all parameters effecting the selected element. If an parameter has an error the entry in this view will turn red.
 <img src="images/parameter_area.png" title="Parameter View Area" width="1000" height="500"/>
 
+#### Info View Area
+The info area displays additional detail information for the selected tree element and the selected parameter. Especially the element attributes (e.g `formatter`) can be found here.
 <img src="images/info_area.png" title="Info View Area" width="1000" height="500"/>
 
+#### Error View Area
+In the error view all occured errors are listed. The errors belong to category `fatal`, `parsing` or `editing`. While `parsing` and `editing` are mostly correctable with the tool. The `fatal` ones violate the basic `.ecf` syntax and therefore cannot be imported.
 <img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
-
-
 
 ## Operations Overview
 
