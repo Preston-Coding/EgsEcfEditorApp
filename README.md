@@ -51,6 +51,9 @@ Icons and Controls with complex behavior have tooltips on mouse over. All Labels
 
 ### Tool Areas
 
+<img src="images/tree_area.png" title="Tool Teaser" width="1000" height="500"/>
+
+<img src="images/info_area.png" title="Tool Teaser" width="1000" height="500"/>
 
 ## Operations Overview
 
