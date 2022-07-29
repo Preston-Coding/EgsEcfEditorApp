@@ -8,7 +8,7 @@ An application to simplify the handling and customizing of the `.ecf` configurat
 - [Installation](#installation)
 - [Feature Overview](#feature-overview)
 - [Operations Overview](#operations-overview)
-- [Shortcuts and Icons](#shortcuts-and-icons)
+- [Shortcuts and Functions](#shortcuts-and-functions)
 - [File Content Definition](#file-content-definition)
 - [File Content Recognition](#file-content-recognition)
 - [Planned Major Features](#planned-major-features)
@@ -50,18 +50,24 @@ The error state is inherited structure upwards. A error of a subelement invalida
 Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported.
 
 ### Tool Areas
-
+#### File Operation Area
+The standard file operations (new, open, reload, save, close) are located in this area. The cross-file functions (diff, merge, xml) are also arranged here.
 <img src="images/file_operation_area.png" title="File Operation Area" width="1000" height="500"/>
-<figcaption align = "center"><b>test</b></figcaption>
 
-testeetete
-
+#### Filter and File Selection Area
+In this Area each opened file will get a tab containing the file name. The first label in the tool line indicates the attached content definition, for example `BlocksConfig`. The remaining icons provide different filter options applied to all content view areas.
 <img src="images/filter_area.png" title="Filter Area" width="1000" height="500"/>
 
+#### Content Operation Area
+The tools in this area provide content altering options like adding, editing or removing elements. The copy/paste function is located here, too.  
 <img src="images/content_operation_area.png" title="Content Operation Area" width="1000" height="500"/>
 
+#### Tree View Area
+The tree view area brings the structural overview. The root elements, child elements, parameters and comments are displayed in this view. If an element has an error the entry in this view will turn red.
 <img src="images/tree_area.png" title="Tree View Area" width="1000" height="500"/>
 
+#### Parameter View Area
+The parameter view area shows the detail information of any parameter correlating to the selected tree element. Additionally the view analyzes and displays the inheritance dependancies to referenced elements to provide a overview over all parameters effecting the selected element. If an parameter has an error the entry in this view will turn red.
 <img src="images/parameter_area.png" title="Parameter View Area" width="1000" height="500"/>
 
 <img src="images/info_area.png" title="Info View Area" width="1000" height="500"/>
@@ -73,7 +79,7 @@ testeetete
 ## Operations Overview
 
 
-## Shortcuts and Icons
+## Shortcuts and Functions
 - `double-click` opens the edit panel for the clicked item
 - `right-click` opens the context panel for the clicked item
 - `delete` removes the selected items
