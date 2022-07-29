@@ -79,6 +79,7 @@ In the error view all occured errors are listed. The errors belong to category `
 <img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
 
 ## Operations Overview
+### Opening files
 
 
 ## Shortcuts and Functions
