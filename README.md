@@ -31,7 +31,10 @@ Just download the latest release and unzip the content wherever you might need t
 
 ## Feature Overview
 ### Definition
-For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `` sub folder of the zip package. For creating or adjusting the definitions refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different definition the `.ecf` file must be closed and reopened.
+For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `` sub folder of the zip package. For creating or adjusting the definitions yourself refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different definition the `.ecf` file must be closed and reopened. The actual version is shipped with definitions for:
+- `BlocksConfig.ecf`
+- `Factions.ecf`
+- `ItemsConfig.ecf`
 
 ## Operations Overview
 
@@ -44,7 +47,8 @@ For each `.ecf` file the tool needs a definition. These definitions are located 
 - `strg + v` pastes the copied items into the selected item, or after it if insertion is not allowed for the item
 
 ## File Content Definition
-
+notes
+- filename
 
 ## File Content Recognition
 
