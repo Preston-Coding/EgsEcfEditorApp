@@ -104,7 +104,7 @@ For especially big files like `BlocksConfig.ecf` (or especially lame PCs :zany_f
 
 <img src="images/loading_content.png" title="Loading Dialog"/>
 
-### Adding / Editing Content
+### Adding And Editing Content
 At adding or editing (see [Shortcuts and Functions](#shortcuts-and-functions)) the editor dialog is shown. The dialog is designed to not produce elements with errors. To achive this support pre opening checks, pre filled selection lists and pre closing checks will be performed. These logics depends primary on the attached file definition and the present content data.
 
 The only exception is the creation of a completely new root element. At the creation of a root element all mandatory (see [File Content Definition](#file-content-definition)) parameters will be added without values. This will create errors until the mandatory parameters will be filled with values.
@@ -220,14 +220,30 @@ The available chapters are:
 - `BlockParameters` the expected parameters for the data blocks (e.g. `Material`)
 - `ParameterAttributes` the expected attributes for the parameters (e.g. `formatter`)
 
-Each `.xml param` can hold different switches to control the behaviour of the error checking while parsing and editing the `.ecf` content.
+Each `.xml Param` line item can hold different switches to control the behaviour of the error checking while parsing and editing the `.ecf` content. The chapters are allowed to be empty, but remind that the respective functions in the [Editor Panel](#adding-and-editing-content) will be switched off without the definition.
 
 <img src="images/xml_options.png" title="ECF Options"/>
 
+- `name` the name of the `.ecf` element (e.g. `Material`)
+- `optional` determines if this element is optional, non-optional elements will be treated as mandatory and can in some cases overwrite optional ones
+- `hasValue` determines if this element has (reading) / should have (creation) a value
+- `allowBlank` determines if for this element a `empty value` is allowed 
+- `forceEscape` determines if at creation this element must be escaped, useful for text references like `TechTreeParent`
+- `info` a free text to preserv designer infos for the element, shown in the tool, not written to the file
 
 ## File Content Recognition
-notes
-- fatal errors, editing errors, parsing errors
+The Parsing of the `.ecf` tries to interprete the whole variety of spellings present in the different files. To minimize result validaion efforts and to preserv the readability of the files by [Empyrion Galactic Survival](https://empyriongame.com/), the tool reproduces nearly the same spelling as the original file.
+
+The exceptions are the white spaces, the empty lines and the comments. All the non-function relevant white spaces and empty lines will be remove. All the different varieties of comment spelling will be streamlined to appended inline comments. For the content recognition and operation three groups of errors are possible.
+
+### Fatal Error
+This errors occure during the parsing of the content at the loading of the file. The corresponding line in the `.ecf` file violates the syntax in a manner which makes it impossible to attach this data to the managed structure within the tool. Such an error must be corrected in the original file if the data is needed.
+
+### Parsing Error
+This errors occure during the parsing of the content at the loading of the file. It can in mostly all cases be corrected in tool.
+
+### Editing error
+This errors occure at content editing operations in the tool which would consume too much system recources to prevent it by a pre check. It can in all cases be corrected in the tool.
 
 ## Planned Major Features
 :wrench::wrench::wrench: The next steps will be the compare / merge feature together with more supported files. :wrench::wrench::wrench:
