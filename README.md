@@ -199,7 +199,7 @@ After starting the tool the present `.xml` files are loaded and prepared for use
 After bigger patches of [Empyrion Galactic Survival](https://empyriongame.com/) a definition maybe can partly went deprecated. In this case a backwards check of the definition is recommended. This can be done (if I'm too lame to release an update :sleeping:) by hitting the respective button ( <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> ). This function compares the actual selected `.ecf` file against the latest loaded `.xml` definition of the same type and lists the `.xml` content definition for which no content is found in the `.ecf` file.
 
 ### Xml File Content
-The definition uses often the terminology `Block`. Don't missinterprete this with an `Empyrion Block`. In Xml-speaking `Block` stands for a `.ecf data block`.
+The definition uses often the terminology `Block`. Don't missinterprete this with an `Empyrion ingame block`. In Xml-speaking `Block` stands for a `.ecf data block`.
 
 The `formatting` chapter of the `.xml` files provides settings for the basic `.ecf` syntax. This chapter should mostly be similar for all `.ecf` files.
 
