@@ -198,6 +198,9 @@ After starting the tool the present `.xml` files are loaded and prepared for use
 
 After bigger patches of [Empyrion Galactic Survival](https://empyriongame.com/) a definition maybe can partly went deprecated. In this case a backwards check of the definition is recommended. This can be done (if I'm too lame to release an update :sleeping:) by hitting the respective button ( <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> ). This function compares the actual selected `.ecf` file against the latest loaded `.xml` definition of the same type and lists the `.xml` content definition for which no content is found in the `.ecf` file.
 
+### Xml File Content
+The definition uses often the terminology `Block`. Don't missinterprete this with an `Empyrion Block`. In Xml-speaking `Block` stands for a `.ecf data block`.
+
 The `formatting` chapter of the `.xml` files provides settings for the basic `.ecf` syntax. This chapter should mostly be similar for all `.ecf` files.
 
 <img src="images/xml_formatting.png" title="XML ECF Formatting"/>
@@ -214,11 +217,13 @@ The available chapters are:
 - `RootBlockAttributes` the expected attributes for blocks in the root level (e.g. `Id`) 
 - `ChildBlockTypes` the expected data types of blocks not in the root level (e.g. `Child`)
 - `ChildBlockAttributes` the expected attributes for blocks in the root level (e.g. `DropOnDestroy`)
-- `BlockParameters` the expected parameters for the blocks (e.g. `Material`)
+- `BlockParameters` the expected parameters for the data blocks (e.g. `Material`)
 - `ParameterAttributes` the expected attributes for the parameters (e.g. `formatter`)
 
-notes
-- xml strucure options
+Each `.xml param` can hold different switches to control the behaviour of the error checking while parsing and editing the `.ecf` content.
+
+<img src="images/xml_options.png" title="ECF Options"/>
+
 
 ## File Content Recognition
 notes
