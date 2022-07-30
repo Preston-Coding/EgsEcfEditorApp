@@ -196,9 +196,9 @@ The defintions will be read from the `EcfFileDefinitions` sub folder from the to
 
 <img src="images/xml_type.png" title="XML Type"/>
 
-If the `EcfFileDefinitions` sub folder is missing or empty the tool will create a simple template `.xml` file for `BlocksConfig.ecf`. This file can be used a starting point for creation of own files and is structural complete, but will likely be incomplete compared to the expected `.ecf` content.
+If the `EcfFileDefinitions` sub folder is missing or empty the tool will create a simple template `.xml` file for `BlocksConfig.ecf`. This file can be used as starting point for creation of own files and is structural complete, but will likely be incomplete compared to the expected `.ecf` content.
 
-After starting the tool the present `.xml` files are loaded and prepared for use. Changing the `.xml` files after running the tool will not be recognized by the tool. If you want the tool to reload the definitions just hit the respective button ( <img src="EgsEcfControls\Resources\Icon_ReloadDefinitions.png" title="icon" width="16" height="16"/> ). Due to the intended behaviour to not alter the definitions of opened `.ecf` files, reloading the '.xml' definitions not changing opened `.ecf` files. 
+After starting the tool the present `.xml` files are loaded and prepared for use. Changing the `.xml` files after running the tool will not be recognized by the tool. If you want the tool to reload the definitions just hit the respective button ( <img src="EgsEcfControls\Resources\Icon_ReloadDefinitions.png" title="icon" width="16" height="16"/> ). Due to the intended behaviour to not alter the definitions of opened `.ecf` files, reloading the '.xml' definitions not changing already opened `.ecf` files. 
 
 After bigger patches of [Empyrion Galactic Survival](https://empyriongame.com/) a definition maybe can partly went deprecated. In this case a backwards check of the definition is recommended. This can be done (if I'm too lame to release an update :sleeping:) by hitting the respective button ( <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> ). This function compares the actual selected `.ecf` file against the latest loaded `.xml` definition of the same type and lists the `.xml` content definition for which no content is found in the `.ecf` file.
 
