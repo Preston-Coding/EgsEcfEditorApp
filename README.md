@@ -198,10 +198,24 @@ After starting the tool the present `.xml` files are loaded and prepared for use
 
 After bigger patches of [Empyrion Galactic Survival](https://empyriongame.com/) a definition maybe can partly went deprecated. In this case a backwards check of the definition is recommended. This can be done (if I'm too lame to release an update :sleeping:) by hitting the respective button ( <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> ). This function compares the actual selected `.ecf` file against the latest loaded `.xml` definition of the same type and lists the `.xml` content definition for which no content is found in the `.ecf` file.
 
+The `formatting` chapter of the `.xml` files provides settings for the basic `.ecf` syntax. This chapter should mostly be similar for all `.ecf` files.
 
+<img src="images/xml_formatting.png" title="XML ECF Formatting"/>
 
+After the `formatting` follow the sub chapters for the different elements of the `.ecf` files. This chapter contains the expected `.ecf` content.
 
+<img src="images/xml_ecf_content.png" title="XML ECF Content"/>
 
+The available chapters are:
+
+- `BlockTypePreMarks` the expected pre marks after the block opener (e.g. `+`)
+- `BlockTypePostMarks` the expected seperators to define the end of the block type (e.g. ` `)
+- `RootBlockTypes` the expected data types of blocks in the root level (e.g. `Block`)
+- `RootBlockAttributes` the expected attributes for blocks in the root level (e.g. `Id`) 
+- `ChildBlockTypes` the expected data types of blocks not in the root level (e.g. `Child`)
+- `ChildBlockAttributes` the expected attributes for blocks in the root level (e.g. `DropOnDestroy`)
+- `BlockParameters` the expected parameters for the blocks (e.g. `Material`)
+- `ParameterAttributes` the expected attributes for the parameters (e.g. `formatter`)
 
 notes
 - xml strucure options
