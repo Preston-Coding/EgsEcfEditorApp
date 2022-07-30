@@ -186,8 +186,14 @@ The three listing views [Tree View Area](#tree-view-area), [Parameter View Area]
 - <img src="EgsEcfControls\Resources\Icon_ShowInFile.png" title="icon" width="16" height="16"/> show error in file
 
 ## File Content Definition
+The file content definition is the basic information for the tool which content is viable in the loaded `.ecf` file and which is not. To achive the design goal to be reliable able to load and interprete `.ecf` files from any source (default files, text editor tool files, manually edited files and so on) the definition provides several options. 
+
+The defintions will be read from the `EcfFileDefinitions` sub folder from the tool root directory. The file name doesn't matter. Each file in this directory will be read. The first entry in the file is the definition name shown in the tool, defining the corresponding `.ecf` file (for attach guessing) and must be unique. Every further `.xml` file with the same `type` setting will be ignored.
+
+It can be explicitly be defined if content is present, is not present or may be optional.
+
 notes
-- filename, foldername, template
+- filename, foldername, template, xml strucure options, xml reloading, xml deprecation
 
 ## File Content Recognition
 notes
