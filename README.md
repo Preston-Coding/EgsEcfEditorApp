@@ -236,9 +236,11 @@ Each `.xml Param` line item can hold different switches to control the behaviour
 - `info` a free text to preserv designer infos for the element, shown in the tool, not written to the file
 
 ## File Content Recognition
-The Parsing of the `.ecf` tries to interprete the whole variety of spellings present in the different files. To minimize result validaion efforts and to preserv the readability of the files by [Empyrion Galactic Survival](https://empyriongame.com/), the tool reproduces nearly the same spelling as the original file.
+The Parsing of the `.ecf` tries to interprete the whole variety of spellings present in the different files. To minimize result validation efforts and to preserv the readability of the files by [Empyrion Galactic Survival](https://empyriongame.com/), the tool reproduces nearly the same spelling as the original file.
 
-The exceptions are the white spaces, the empty lines and the comments. All the non-function relevant white spaces and empty lines will be remove. All the different varieties of comment spelling will be streamlined to appended inline comments. For the content recognition and operation three groups of errors are possible.
+The exceptions are the white spaces, the empty lines and the comments. All the function-irrelevant white spaces and empty lines will be remove. All the different varieties of comment spellings will be streamlined to appended inline comments.
+
+For the content recognition and operation three groups of errors are possible.
 
 ### Fatal Error
 This errors occur during the parsing of the content at the loading of the `.ecf` file. The corresponding line in the file violates the syntax in a manner which makes it impossible to attach this data to the managed structure within the tool. Such an error must be corrected in the original file if the data is needed.
