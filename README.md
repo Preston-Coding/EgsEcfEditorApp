@@ -220,7 +220,7 @@ The available chapters are:
 - `RootBlockTypes` the expected data types of blocks in the root level (e.g. `Block`)
 - `RootBlockAttributes` the expected attributes for blocks in the root level (e.g. `Id`) 
 - `ChildBlockTypes` the expected data types of blocks not in the root level (e.g. `Child`)
-- `ChildBlockAttributes` the expected attributes for blocks in the root level (e.g. `DropOnDestroy`)
+- `ChildBlockAttributes` the expected attributes for blocks not in the root level (e.g. `DropOnDestroy`)
 - `BlockParameters` the expected parameters for the data blocks (e.g. `Material`)
 - `ParameterAttributes` the expected attributes for the parameters (e.g. `formatter`)
 
