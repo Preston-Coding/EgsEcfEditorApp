@@ -237,13 +237,13 @@ The Parsing of the `.ecf` tries to interprete the whole variety of spellings pre
 The exceptions are the white spaces, the empty lines and the comments. All the non-function relevant white spaces and empty lines will be remove. All the different varieties of comment spelling will be streamlined to appended inline comments. For the content recognition and operation three groups of errors are possible.
 
 ### Fatal Error
-This errors occure during the parsing of the content at the loading of the `.ecf` file. The corresponding line in the file violates the syntax in a manner which makes it impossible to attach this data to the managed structure within the tool. Such an error must be corrected in the original file if the data is needed.
+This errors occur during the parsing of the content at the loading of the `.ecf` file. The corresponding line in the file violates the syntax in a manner which makes it impossible to attach this data to the managed structure within the tool. Such an error must be corrected in the original file if the data is needed.
 
 ### Parsing Error
-This errors occure during the parsing of the content at the loading of the `.ecf` file. It can in mostly all cases be corrected in the tool.
+This errors occur during the parsing of the content at the loading of the `.ecf` file. It can in mostly all cases be corrected in the tool.
 
 ### Editing error
-This errors occure at content editing operations in the tool which would consume too much system recources to prevent it by a pre check. It can in all cases be corrected in the tool.
+This errors occur at content editing operations in the tool which would consume too much system recources to prevent it by a pre check. It can in all cases be corrected in the tool.
 
 ## Planned Major Features
 :wrench::wrench::wrench: The next steps will be the compare / merge feature together with more supported files. :wrench::wrench::wrench:
