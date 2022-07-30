@@ -31,7 +31,7 @@ Just download the latest release and unzip the content wherever you might need t
 
 ## Feature Overview
 ### Content Definition
-For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `EcfFileDefinitions` sub folder of the zip package. For creating or adjusting the definitions yourself refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different definition the `.ecf` file must be closed and reopened. The actual version is shipped with definitions for:
+For each `.ecf` file the tool needs a definition. These definitions are located in `.xml` files in the `EcfFileDefinitions` sub folder of the zip package. For creating or adjusting the definitions yourself refer to [File Content Definition](#file-content-definition). After loading a `.ecf` file the definition is attached to it. To reinterprete a `.ecf` file with a different or changed definition the `.ecf` file must be closed and reopened. The actual version is shipped with definitions for:
 - `BlocksConfig.ecf`
 - `Factions.ecf`
 - `ItemsConfig.ecf`
@@ -44,12 +44,12 @@ At saving a `.ecf` file the whole content in the file is wiped and recreated.
 ```diff
 - Any element with errors is NOT written to the file!
 ```
-The error state is inherited structure upwards. A error of a subelement invalidates its container upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding elements in the final `.ecf` file. 
+The error state is inherited structure upwards. A error of a sub element invalidates its containing element upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding elements in the final `.ecf` file. 
 
 ### Language and Tool Support
-Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported.
+Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported. The language switches automaticly based on the local machine culture setting.
 
-### Tool Areas
+### Tool Overview
 #### File Operation Area
 The standard file operations (new, open, reload, save, close) are located in this area. The cross-file functions (diff, merge, xml) are also arranged here.
 
@@ -85,6 +85,15 @@ In the error view all occured errors are listed. The errors belong to category `
 
 <img src="images/error_area.png" title="Error View Area" width="1000" height="500"/>
 
+### Mass Changing
+:wrench: Not implemented yet :wrench:
+
+### Compare and Merge
+:wrench: Not implemented yet :wrench:
+
+### Tech Tree Preview
+:wrench: Not implemented yet :wrench:
+
 ## Operations Overview
 ### Opening a file
 After selecting the file to open the tool tries to guess which definition fits to the file by examining the file name. If this is successful the guessed definition is automaticly selected in the following dialog. In this case the Dialog can be skipped with `Ok`. When the guessing fails or a new file is created the definition must be selected manually from the provided drop down list.
@@ -106,9 +115,9 @@ The only exception is the creation of a completely new root element. At the crea
 ### Shortcuts
 - `double-click` opens the edit panel for the clicked item
 - `right-click` opens the context panel for the clicked item
-- `delete` removes the selected items
-- `strg + c` copies the selected items to the clipboard
-- `strg + v` pastes the copied items into the selected item, or after it if insertion is not allowed for the item
+- `delete` key removes the selected items
+- `strg + c` key copies the selected items to the clipboard
+- `strg + v` key pastes the copied items into the selected item, or after it if insertion is not allowed for the item
 
 ### Context Panel
 #### Tree View Context Panel
@@ -142,11 +151,11 @@ The three listing views [Tree View Area](#tree-view-area), [Parameter View Area]
 - <img src="EgsEcfControls\Resources\Icon_SaveAllFiles.png" title="icon" width="16" height="16"/> save all opened files
 - <img src="EgsEcfControls\Resources\Icon_CloseFile.png" title="icon" width="16" height="16"/> close selected file
 - <img src="EgsEcfControls\Resources\Icon_CloseAllFiles.png" title="icon" width="16" height="16"/> close all open files
-- <img src="EgsEcfControls\Resources\Icon_Compare.png" title="icon" width="16" height="16"/> compares two files and displays differences
-- <img src="EgsEcfControls\Resources\Icon_Merge.png" title="icon" width="16" height="16"/> merge two files to one with logics
-- <img src="EgsEcfControls\Resources\Icon_BuildTechTreePreview.png" title="icon" width="16" height="16"/> display the tech tree preview
-- <img src="EgsEcfControls\Resources\Icon_ReloadDefinitions.png" title="icon" width="16" height="16"/> see [File Content Definition](#file-content-definition)
-- <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> see [File Content Definition](#file-content-definition)
+- <img src="EgsEcfControls\Resources\Icon_Compare.png" title="icon" width="16" height="16"/> compares two files and displays differences (see [Compare and Merge](#compare-and-merge))
+- <img src="EgsEcfControls\Resources\Icon_Merge.png" title="icon" width="16" height="16"/> merge two files to one (see [Compare and Merge](#compare-and-merge))
+- <img src="EgsEcfControls\Resources\Icon_BuildTechTreePreview.png" title="icon" width="16" height="16"/> displays the tech tree preview (see [Tech Tree Preview](#tech-tree-preview))
+- <img src="EgsEcfControls\Resources\Icon_ReloadDefinitions.png" title="icon" width="16" height="16"/> reloads the `.xml` definitions (see [File Content Definition](#file-content-definition))
+- <img src="EgsEcfControls\Resources\Icon_CheckDefinition.png" title="icon" width="16" height="16"/> checks the `.xml` definitions (see [File Content Definition](#file-content-definition))
 
 #### Filter and Sorting Operations
 - <img src="EgsEcfControls\Resources\Icon_ApplyFilter.png" title="icon" width="16" height="16"/> apply filter
@@ -159,7 +168,7 @@ The three listing views [Tree View Area](#tree-view-area), [Parameter View Area]
 #### Content Operations
 - <img src="EgsEcfControls\Resources\Icon_Add.png" title="icon" width="16" height="16"/> add item to / after selection
 - <img src="EgsEcfControls\Resources\Icon_ChangeSimple.png" title="icon" width="16" height="16"/> editing first selected item
-- <img src="EgsEcfControls\Resources\Icon_ChangeComplex.png" title="icon" width="16" height="16"/> editing item with logics
+- <img src="EgsEcfControls\Resources\Icon_ChangeComplex.png" title="icon" width="16" height="16"/> editing items with logics (see [Mass Changing](#mass-changing))
 - <img src="EgsEcfControls\Resources\Icon_Remove.png" title="icon" width="16" height="16"/> removing selected items
 - <img src="EgsEcfControls\Resources\Icon_Copy.png" title="icon" width="16" height="16"/> copy selected items
 - <img src="EgsEcfControls\Resources\Icon_Paste.png" title="icon" width="16" height="16"/> paste copied items to / after selection
