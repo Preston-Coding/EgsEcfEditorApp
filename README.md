@@ -44,7 +44,11 @@ At saving a `.ecf` file the whole content in the file is wiped and recreated.
 ```diff
 - Any element with errors is NOT written to the file!
 ```
-The error state is inherited structure upwards. A error of a sub element invalidates its containing element upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding elements in the final `.ecf` file. 
+The error state is inherited structure upwards. A error of a sub element invalidates its containing element upto the root element. So pay attention to any error listed in the error report view and take care of it if you need the corresponding elements in the final `.ecf` file. Due to the nature of the `.ecf` syntax of consecutive specifications its recommended to
+```diff
+- solve errors from top to bottom
+```
+to not follow rabbits.
 
 ### Language and Tool Support
 Icons and Controls with complex behavior have tooltips on mouse over. All Labels and tootips are localised. At the moment de-DE and en-GB is supported. The language switches automaticly based on the local machine culture setting.
