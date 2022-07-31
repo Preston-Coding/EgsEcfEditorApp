@@ -240,6 +240,8 @@ The Parsing of the `.ecf` tries to interprete the whole variety of spellings pre
 
 The exceptions are the white spaces, the empty lines and the comments. All the function-irrelevant white spaces and empty lines will be remove. All the different varieties of comment spellings will be streamlined to appended inline comments.
 
+The tool parses the `.ecf` file content line by line and seperates the line content item by item according to the definition and chronologic. A fault can depending on its severity lead to a whole bunch of follower errors. This is the reason of solving errors from top to bottom.
+
 For the content recognition and operation three groups of errors are possible.
 
 ### Fatal Error
